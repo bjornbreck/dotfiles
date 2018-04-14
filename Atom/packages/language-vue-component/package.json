@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+        "spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/apm-install-dir-118314-57005-1by8ooq.ykd0io1or"
+    ]
+  ],
+  "_from": "../d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+  "_id": "language-vue-component@0.5.0",
+  "_inCache": true,
+  "_location": "/language-vue-component",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+    "spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+  "_shasum": "2f1d7cf06e433b51071e6e932bcf41d659eaf0a2",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57005-19o478s.m4bz7zxgvi/package.tgz",
+  "_where": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/apm-install-dir-118314-57005-1by8ooq.ykd0io1or",
+  "bugs": {
+    "url": "https://github.com/CYBAI/language-vue-component/issues"
+  },
+  "dependencies": {},
+  "description": "Adds syntax highlighting to Vue Component files in Atom.",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/CYBAI/language-vue-component#readme",
+  "license": "MIT",
+  "name": "language-vue-component",
+  "optionalDependencies": {},
+  "readme": "Syntax highlighting for single-file [Vue.js](http://vuejs.org) components supports in [Atom](https://atom.io/) (enabled by [Vueify](https://github.com/vuejs/vueify) or [vue-loader](https://github.com/vuejs/vue-loader)).\n\n*This syntax highlighting is translated from [Vue.js author's Sublime Text syntax highlighting for single-file Vue components](https://github.com/vuejs/vue-syntax-highlight).*\n\n**NOTE:** You still need to install corresponding packages for pre-processors (e.g. Jade, SASS, CoffeeScript) to get proper syntax highlighting for them.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CYBAI/language-vue-component.git"
+  },
+  "version": "0.5.0"
+}

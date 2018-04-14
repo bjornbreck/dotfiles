@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+        "spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/apm-install-dir-118314-57028-r572zi.gsyioogvi"
+    ]
+  ],
+  "_from": "../d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+  "_id": "vue2-autocomplete@0.1.0-alpha.4",
+  "_inCache": true,
+  "_location": "/vue2-autocomplete",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+    "spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+  "_shasum": "2545ca687aec6fc94c1acae23d6fb79c42408c38",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-118314-57028-10830o6.1yro8t1emi/package.tgz",
+  "_where": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/apm-install-dir-118314-57028-r572zi.gsyioogvi",
+  "author": {
+    "name": "Eduardo Alves"
+  },
+  "bugs": {
+    "url": "https://github.com/ealves-pt/atom-vue2-autocomplete/issues"
+  },
+  "dependencies": {
+    "fuzzaldrin": "^2.1.0"
+  },
+  "description": "Vue.js 2.0+ autocomplete for Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/ealves-pt/atom-vue2-autocomplete#readme",
+  "keywords": [
+    "vue",
+    "autocomplete",
+    "provider"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "vue2-autocomplete",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# Vue 2.0+ Autocomplete for Atom.io\n\n> Still under development **(might not be stable)**. Contributions are welcome :smiley:\n\n## Autocomplete\n\n### Supported tags\n\n* partial\n* slot\n\n### Supported Directives\n\n* v-text\n* v-html\n* v-if\n* v-else-if\n* v-show\n* v-else\n* v-for\n* v-on\n* v-bind\n* v-model\n* v-pre\n* v-cloak\n* v-once\n\n### Built-In Components [TODO]\n\n* component\n* transition\n* transition-group\n* keep-alive\n* slot\n\n## Snippets\n\n> Works **only** with `*.vue` files.\n\nJust type `vtemplate`, `vscript` or `vstyle` to generate the respective sections.\n\n## Contribution\n\nIt's always welcome :D. Just fork and open a PR.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ealves-pt/atom-vue2-autocomplete.git"
+  },
+  "version": "0.1.0-alpha.4"
+}

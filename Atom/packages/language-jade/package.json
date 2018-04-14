@@ -1,0 +1,59 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+        "spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/apm-install-dir-11829-54751-o30ie8.np1e3zncdi"
+    ]
+  ],
+  "_from": "../d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+  "_id": "language-jade@0.7.3",
+  "_inCache": true,
+  "_location": "/language-jade",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+    "spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+  "_shasum": "1c45c3617a41eb6b6488eb85ded938137b74116f",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/d-11829-54751-zd0o2b.txd4ewxw29/package.tgz",
+  "_where": "/private/var/folders/56/xhf931hd1h70vvvy4d7dppj00000gn/T/apm-install-dir-11829-54751-o30ie8.np1e3zncdi",
+  "bugs": {
+    "url": "https://github.com/devongovett/atom-jade/issues"
+  },
+  "dependencies": {},
+  "description": "Jade TextMate bundle converted for Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/devongovett/atom-jade#readme",
+  "license": "MIT",
+  "name": "language-jade",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# atom-jade\n\nThe [Jade TextMate bundle](https://github.com/davidrios/jade-tmbundle) converted\nfor [Atom](https://atom.io/).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devongovett/atom-jade.git"
+  },
+  "version": "0.7.3"
+}
