@@ -1,0 +1,92 @@
+# cd aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+# Detect which `ls` flavor is in use
+colorflag="-G"
+export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
+
+# ls aliases
+alias ll="ls -alF ${colorflag}"
+alias la="ls -A ${colorflag}"
+alias l="ls -CF ${colorflag}"
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+
+# Shortcuts
+alias sites="cd ~/sites"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+
+# Magic
+alias magic="npm start"
+alias shasha="npm start"
+alias getout="npm uninstall"
+
+# Copy pubkey
+alias cpub="pbcopy < ~/.ssh/id_rsa.pub"
+
+# Fuck sudo
+alias fuck="sudo !!"
+alias svim='sudo vim'
+
+# Time & Date
+alias time='date +"%r"'
+alias today='date +"%m-%d-%Y"'
+alias now='date +"%r%n%m-%d-%Y"'
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias paths='echo -e ${PATH//:/\\n}'
+
+# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume output volume 100'"
+alias 25="osascript -e 'set volume output volume 25'"
+alias 50="osascript -e 'set volume output volume 50'"
+alias 75="osascript -e 'set volume output volume 75'"
+
+# Google Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+# IP address
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# AEM things
+alias tailf="tail -f"
+alias err="tailf crx-quickstart/logs/error.log"
+#alias err="tail -f crx-quickstart/logs/error.log"
+alias author="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar cq-author-4502.jar"
+alias publish="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8006,server=y,suspend=n -jar cq-publish-4503.jar"
+alias min="mvn clean install -e -Plocal-author,adobe-public -DskipTests"
+alias mb="mvn clean install -Plocal-author"
+alias mbst="mvn clean install -Plocal-author -DskipTests"
+alias mbafk="mvn clean install -PautoInstallPackage"
+alias mbitch="mvn clean install -PautoInstallPackage"
+
+# Git
+alias g="git"
+alias s="git status"
+alias gash="git stash"
+alias boom="git stash pop"
+alias egad="git add -A"
+alias gaav="git branch -av"
+alias gav="git branch -v"
+alias com="git commit -m '"
+
+# Raspberry Pi
+alias eatpi="ssh pi@192.168.0.38"
+
+# Gridsome Shit
+alias gdev="gridsome develop"
+alias gbuild="gridsome build"
+
+# Octoprint
+alias octo="open http://octopi.local/"
