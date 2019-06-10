@@ -14,7 +14,7 @@ module.exports = {
     },
 
     // default font size in pixels for all tabs
-    fontSize: 19,
+    fontSize: 18,
 
     // font family with optional fallbacks
     fontFamily: '"Fira Code", Consolas, "Lucida Console", monospace',
@@ -135,7 +135,7 @@ module.exports = {
     env: {},
 
     // set to `false` for no bell
-    bell: 'SOUND',
+    bell: false,
 
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,

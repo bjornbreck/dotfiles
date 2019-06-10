@@ -1,3 +1,7 @@
+# Vim
+alias v="vim"
+alias v~="vim ~/"
+
 # cd aliases
 alias ..="cd .."
 alias ...="cd ../.."
@@ -24,6 +28,8 @@ alias dt="cd ~/Desktop"
 alias magic="npm start"
 alias shasha="npm start"
 alias getout="npm uninstall"
+alias fucknpm="rm -rf node_modules && npm i"
+alias kevin="aem-front"
 
 # Copy pubkey
 alias cpub="pbcopy < ~/.ssh/id_rsa.pub"
@@ -62,27 +68,32 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # AEM things
 alias tailf="tail -f"
 alias err="tailf crx-quickstart/logs/error.log"
+#alias err="tailf crx-quickstart/logs/error.log | grep [^-]error$ | chalk "
+#alias err="tailf crx-quickstart/logs/error.log | chalk {red.bold error}"
 #alias err="tail -f crx-quickstart/logs/error.log"
 alias author="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar cq-author-4502.jar"
 alias publish="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8006,server=y,suspend=n -jar cq-publish-4503.jar"
 alias min="mvn clean install -e -Plocal-author,adobe-public -DskipTests"
-alias mb="mvn clean install -Plocal-author"
-alias mbst="mvn clean install -Plocal-author -DskipTests"
-alias mbafk="mvn clean install -PautoInstallPackage"
-alias mbitch="mvn clean install -PautoInstallPackage"
+alias mloc="mvn clean install -Plocal-author"
+alias mloclst="mvn clean install -Plocal-author -DskipTests"
+alias mip="mvn clean install -PautoInstallPackage"
+alias mipst="mvn clean install -PautoInstallPackage -DskipTests"
+alias author="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar cq-author-4502.jar"
 
 # Git
 alias g="git"
 alias s="git status"
 alias gash="git stash"
+alias gap="git stash apply"
 alias boom="git stash pop"
 alias egad="git add -A"
 alias gaav="git branch -av"
 alias gav="git branch -v"
 alias com="git commit -m '"
+alias gvis="git log --graph --decorate --pretty=oneline --abbrev-commit"
 
 # Raspberry Pi
-alias eatpi="ssh pi@192.168.0.38"
+
 
 # Gridsome Shit
 alias gdev="gridsome develop"
