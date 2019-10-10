@@ -1,12 +1,16 @@
 # Add `~/bin` to the `$PATH`
 export PATH="/usr/local/bin:$PATH" # Add Git to PATH for stuffs
-export PATH="/opt/apache-maven-3.5.4/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="$(yarn global bin):$PATH"
-export PATH="$PATH:`pwd`/flutter/bin"
+export PATH="/opt/apache-maven-3.6.1/bin:$PATH"
+export PATH="/Users/bjornbreckenridge/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+#export PATH="$HOME/.composer/vendor/bin:$PATH"
+#export PATH="$(yarn global bin):$PATH"
+#export PATH="$PATH:`pwd`/flutter/bin"
 #export PATH="$PATH:/usr/local/bin/yarn"
 #export PATH="$PATH:`yarn global bin`"
 # PATH="$(composer config home)/vendor/bin:$PATH"
+
+export PATH=~/.npm-global/bin:$PATH
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -22,5 +26,5 @@ unset file;
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH

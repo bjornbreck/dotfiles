@@ -163,7 +163,8 @@ module.exports = {
     'hyperterm-tabs',
     'gitrocket',
     'hyperlinks',
-    'hyper-font-ligatures'
+    'hyper-font-ligatures',
+    "hyper-tabs-enhanced"
   ],
 
   // in development, you can create a directory under

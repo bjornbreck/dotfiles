@@ -72,13 +72,18 @@ alias err="tailf crx-quickstart/logs/error.log"
 #alias err="tailf crx-quickstart/logs/error.log | chalk {red.bold error}"
 #alias err="tail -f crx-quickstart/logs/error.log"
 alias author="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar cq-author-4502.jar"
+alias dumbauthor="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar AEM_6.4_Quickstart.jar"
+alias author65="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar AEM_6.5_Quickstart.jar"
 alias publish="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8006,server=y,suspend=n -jar cq-publish-4503.jar"
 alias min="mvn clean install -e -Plocal-author,adobe-public -DskipTests"
 alias mloc="mvn clean install -Plocal-author"
-alias mloclst="mvn clean install -Plocal-author -DskipTests"
+alias mlocst="mvn clean install -Plocal-author -DskipTests"
 alias mip="mvn clean install -PautoInstallPackage"
 alias mipst="mvn clean install -PautoInstallPackage -DskipTests"
 alias author="java -Xmx2048M -agentlib:jdwp=transport=dt_socket,address=8005,server=y,suspend=n -jar cq-author-4502.jar"
+
+# Java things
+alias java8="jenv shell 1.8.0.212"
 
 # Git
 alias g="git"
@@ -89,8 +94,10 @@ alias boom="git stash pop"
 alias egad="git add -A"
 alias gaav="git branch -av"
 alias gav="git branch -v"
+alias gavv="git branch -vv" # doubly verbose!
 alias com="git commit -m '"
 alias gvis="git log --graph --decorate --pretty=oneline --abbrev-commit"
+alias gall="git remote show origin"
 
 # Raspberry Pi
 
