@@ -1,6 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="/usr/local/bin:$PATH" # Add Git to PATH for stuffs
-export PATH="/Users/bjornbreckenridge/apache-maven-3.6.2/bin:$PATH"
+export PATH="/opt/apache-maven-3.6.1/bin:$PATH"
 export PATH="/Users/bjornbreckenridge/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 #export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -28,8 +28,3 @@ unset file;
 # The original version is saved in .bash_profile.pysave
 #PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
-
-
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"

@@ -8,7 +8,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
-alias -- -="cd -"
 
 # Detect which `ls` flavor is in use
 colorflag="-G"
@@ -24,18 +23,13 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 alias sites="cd ~/sites"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias screenshots="cd ~/screenshots"
 
 # Magic
-alias magic="yarn start"
-alias shasha="yarn start"
+alias magic="npm start"
+alias shasha="npm start"
 alias getout="npm uninstall"
 alias fucknpm="rm -rf node_modules && npm i"
-alias play="REPLAY=replay yarn dev"
-alias dj="REPLAY=record yarn dev"
-
-# Enable colored `grep` output
-alias grep='grep --color=auto'
+alias kevin="aem-front"
 
 # Copy pubkey
 alias cpub="pbcopy < ~/.ssh/id_rsa.pub"
@@ -57,6 +51,13 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias paths='echo -e ${PATH//:/\\n}'
+
+# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume output volume 100'"
+alias 25="osascript -e 'set volume output volume 25'"
+alias 50="osascript -e 'set volume output volume 50'"
+alias 75="osascript -e 'set volume output volume 75'"
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
@@ -87,8 +88,6 @@ alias java8="jenv shell 1.8.0.212"
 # Git
 alias g="git"
 alias s="git status"
-alias gc="git checkout"
-alias gcb="git checkout -b"
 alias gash="git stash"
 alias gap="git stash apply"
 alias boom="git stash pop"
@@ -100,46 +99,12 @@ alias com="git commit -m '"
 alias gvis="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gall="git remote show origin"
 
-# ports
-alias 8080="sudo lsof -i :8080"
+# Raspberry Pi
 
 
-gointodevpod() {
-    kubectl --kubeconfig ~/.kube/au-dev -n $1 exec -it $2 -c au-web -- /bin/bash
-}
-gointostagingpod() {
-    kubectl --kubeconfig ~/.kube/au-preprod -n $1 exec -it $2 -c au-web -- /bin/bash
-}
-alias kubeDev="kubectl --kubeconfig ~/.kube/au-dev"
-alias kubeStage="kubectl --kubeconfig ~/.kube/au-preprod"
-kubelogsoppstage() {
-    namespaces=(api artifactpdf-worker error-worker fi-worker mar-worker nwf-worker order-worker pdf-worker proxy-worker rpi-worker update-worker)
-    for namespace in ${namespaces[*]}; do
-        # echo $p
-        for pod in $(printf $($kubeStage -n "${namespace}" get pods | grep "${namespace}")); do
-            # echo $pod
-            tab "${kubeStage} -n ${namespace} logs -f ${pod}"
-        done
-    done
-}
-kubedev() {
-    export KUBECONFIG=$HOME/.kube/au-dev
-}
-kubestage() {
-    export KUBECONFIG=$HOME/.kube/au-preprod
-}
-kubeprod() {
-    export KUBECONFIG=$HOME/.kube/au-prod
-}
-gointomanypodsdev() {
-    for s in $(kubedev && kubectl -n $1 get pods | tail -n+2 | awk '{print $1}'); do tab "kubedev && kubectl -n $1 exec -it $s /bin/bash"; done
-    exit
-}
-gointomanypodsstage() {
-    for s in $(kubestage && kubectl -n $1 get pods | tail -n+2 | awk '{print $1}'); do tab "kubestage && kubectl -n $1 exec -it $s /bin/bash"; done
-    exit
-}
-gointomanypodsprod() {
-    for s in $(kubeprod && kubectl -n $1 get pods | tail -n+2 | awk '{print $1}'); do tab "kubeprod && kubectl -n $1 exec -it $s /bin/bash"; done
-    exit
-}
+# Gridsome Shit
+alias gdev="gridsome develop"
+alias gbuild="gridsome build"
+
+# Octoprint
+alias octo="open http://octopi.local/"
